@@ -1,5 +1,9 @@
 require 'sinatra'
 
 get '/' do
-  'Welcome to dave-thompson.co.uk!'
+  haml :index
+end
+
+get '/style.css' do
+  scss 'style/style'.to_sym
 end

@@ -1,0 +1,63 @@
+html {
+  font-family: Verdana;
+}
+
+body {
+  background-color: $bg-color;
+  padding: $body-padding;
+}
+
+.header {
+  margin-top: 40px;
+  text-align: center;
+  h1 {
+    font-size: $header-font-size;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .sub {
+    margin-bottom: 50px;
+  }
+}
+
+.row {
+  display: table;
+  text-align: center;
+  &.centered {
+    margin: 0 auto;
+  }
+}
+
+.sm img {
+  width: 100px;
+}
+
+.column {
+  display: table-cell;
+  color: #FFFFFF;
+  width: $medium-col-width;
+  &.small {
+    width: $small-col-width;
+  }
+}
+
+.box {
+  margin: 5px;
+  padding: 10px;
+  -moz-border-radius: $rounded-corner-size;
+  -webkit-border-radius: $rounded-corner-size;
+  border-radius: $rounded-corner-size; /* future proofing */
+  -khtml-border-radius: $rounded-corner-size; /* for old Konqueror browsers */
+  &.middle {
+    margin-left: 0;
+    margin-right: 0;
+  }
+} 
+
+.dark {
+  background-color: $dark;
+}
+
+.darker {
+  background-color: $darker;
+}

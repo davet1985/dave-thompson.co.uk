@@ -1,0 +1,10 @@
+language: ruby
+before_install:
+  - gem install bundler
+rvm:
+  - 2.0.0
+deploy:
+  provider: heroku
+  api_key: "1ff9eae14d881de097cade1f5f1ae16f4d81bdac"
+  app: dave-thompson
+  skip_cleanup: true

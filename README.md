@@ -1,1 +1,0 @@
-# dave-thompson.co.uk

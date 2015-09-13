@@ -1,0 +1,63 @@
+$dark1: #2c3e50;
+$white: whitesmoke;
+$main1: #18bc9c;
+$topbar-height: 95px;
+
+body {
+  background-color: $main1;
+}
+
+.main {
+  padding-top: $topbar-height + 20px;
+}
+
+.row {
+  max-width: 100%;
+  width: 100%;
+}
+
+.section {
+  padding-bottom: 50px;
+  &.home {
+    color: $white;
+    background-color: $main1;
+    .intro {
+      text-align: center;
+      margin-top: 20px;
+      .profile {
+        width: 250px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border: 2px solid $white;
+      }
+      .strap-line {
+        font-size: 30px;
+      }
+    }
+    .social-icons {
+      background-color: $white;
+      padding: 50px 50px 25px 50px;
+      margin-top: 40px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+    }
+  }
+}
+
+#top-nav {
+  background-color: $dark1;
+  h1 a {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+  }
+}
+
+.top-bar {
+  height: $topbar-height;
+  background-color: $dark1;
+}

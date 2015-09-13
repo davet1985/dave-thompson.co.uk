@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/app.js', type='text/javascript')
+  body
+    .fixed(id='top-nav')
+      nav.top-bar(data-topbar='', role='navigation')
+        ul(class='title-area')
+          li(class='name')
+            h1
+              a(href='#') DAVE THOMPSON
+    block content

@@ -5,6 +5,7 @@
   "private": false,
   "dependencies": {
     "jquery": "~2.1.4",
-    "foundation": "5.5.1"
+    "foundation": "5.5.1",
+    "jqueryui": "~1.11.4"
   }
 }

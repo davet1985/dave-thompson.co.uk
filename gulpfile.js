@@ -11,6 +11,7 @@ gulp.task('default', function() {
 gulp.task('javascript', function() {
   return gulp.src([
       './bower_components/jquery/dist/jquery.min.js',
+      './bower_components/jqueryui/jquery-ui.min.js',
       './bower_components/foundation/js/vendor/modernizr.js',
       './bower_components/foundation/js/foundation.min.js',
       './src/assets/javascripts/*.js'
@@ -37,6 +38,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('test', function() {
+  process.env.NODE_ENV = 'test';
   gulp.src('./spec/**/*.js')
     .pipe(jasmine());
 });

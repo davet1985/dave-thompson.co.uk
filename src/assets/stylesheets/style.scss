@@ -1,7 +1,16 @@
 $dark1: #2c3e50;
 $white: whitesmoke;
 $main1: #18bc9c;
+
+$font-xlarge: 30px;
+$font-large: 25px;
+$font-medium: 20px;
+$font-small: 15px;
+
 $topbar-height: 95px;
+$topbar-margin: 25px;
+$topbar-height-short: 50px;
+$topbar-margin-short: 4px;
 
 body {
   background-color: $main1;
@@ -12,8 +21,65 @@ body {
 }
 
 .row {
-  max-width: 100%;
-  width: 100%;
+  max-width: 86rem;
+}
+
+#top-nav {
+  background-color: $dark1;
+  h1 a {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .top-bar {
+    background-color: $dark1;
+    .top-bar-section {
+      .right {
+        margin-right: 10px;
+        li {
+          a {
+            background-color: $dark1;
+            font-weight: bold;
+            font-size: 20px;
+            &.active {
+              color: $main1;
+            }
+          }
+          a:hover {
+            color: $main1;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  &.tall {
+    h1 a {
+      margin-top: $topbar-margin;
+    }
+    .top-bar {
+      height: $topbar-height;
+      .title-area {
+        height: $topbar-height;
+      }
+      .top-bar-section .right {
+        margin-top: $topbar-margin;
+      }
+    }
+  }
+  &.short {
+    h1 a {
+      margin-top: $topbar-margin-short;
+    }
+    .top-bar {
+      height: $topbar-height-short;
+      .top-bar-section .right {
+        margin-top: $topbar-margin-short;
+      }
+    }
+  }
 }
 
 .section {
@@ -32,7 +98,7 @@ body {
         border: 2px solid $white;
       }
       .strap-line {
-        font-size: 30px;
+        font-size: $font-xlarge;
       }
     }
     .social-icons {
@@ -44,20 +110,40 @@ body {
       border-radius: 8px;
     }
   }
-}
-
-#top-nav {
-  background-color: $dark1;
-  h1 a {
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 25px;
-    margin-left: 10px;
-    letter-spacing: 2px;
+  &.blog {
+    margin-top: 20px;
+    color: $white;
+    .blog-title {
+      color: $white;
+      margin-bottom: 0;
+    }
+    .blog-sub-title {
+      font-style: italic;
+      color: #DDD;
+      font-size: $font-small;
+      margin-top: -2px;
+    }
+    .blog-body {
+      margin-top: 20px;
+    }
+    .blog-archive {
+      .title {
+        font-size: $font-large;
+        font-weight: bold;
+      }
+      .year {
+        font-size: $font-medium;
+        font-weight: bold;
+      }
+      ul {
+        list-style-type: none;
+        margin-left: 0;
+        li a {
+          color: $white;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
 
-.top-bar {
-  height: $topbar-height;
-  background-color: $dark1;
-}

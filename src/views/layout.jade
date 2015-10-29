@@ -1,14 +1,18 @@
 doctype html
 html
   head
-    title= title
+    title Dave Thompson - Full-stack software developer #{title}
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='/javascripts/app.js', type='text/javascript')
   body
-    .fixed(id='top-nav')
+    .fixed.tall(id='top-nav')
       nav.top-bar(data-topbar='', role='navigation')
-        ul(class='title-area')
-          li(class='name')
+        ul.title-area
+          li.name
             h1
-              a(href='#') DAVE THOMPSON
+              a(href='/') Dave Thompson
+        section.top-bar-section
+          ul.right
+            li
+              a.blog(href='/blog') blog
     block content

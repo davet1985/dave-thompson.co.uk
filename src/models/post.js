@@ -6,6 +6,8 @@ var Post = function(props, readFile) {
   if (typeof readFile === 'undefined') { readFile = true; }
   this.slug = props.slug;
   this.title = props.title;
+  this.date = props.date;
+  this.author = props.author;
   this.filename = props.filename;
   if (readFile) {
     this.retrieveContent();
@@ -14,10 +16,7 @@ var Post = function(props, readFile) {
 
 Post.prototype.retrieveContent = function() {
   var data = fs.readFileSync(cfg.contentDirectory + '/posts/' + this.filename, 'utf8');
-  data = JSON.parse(data);
-  this.date = data.date;
-  this.author = data.author;
-  this.content = marked(data.content);
+  this.content = marked(data);
 };
 
 module.exports = Post;

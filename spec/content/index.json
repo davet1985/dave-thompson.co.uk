@@ -6,7 +6,9 @@
         {
           "slug": "2015/10/test-post",
           "title": "Test post",
-          "filename": "test-post.json"
+          "date": "6th October 2015",
+          "author": "Dave Thompson",
+          "filename": "test-post.md"
         }
       ]
     },
@@ -16,6 +18,8 @@
         {
           "slug": "2014/09/another-test-post",
           "title": "Another test post",
+          "date": "21st September 2014",
+          "author": "Dave Thompson",
           "filename": "another-test-post.json"
         }
       ]

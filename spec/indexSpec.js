@@ -32,7 +32,9 @@ describe("Index", function() {
     expect(post instanceof Post).toBeTruthy();
     expect(post.slug).toBe('2015/10/test-post');
     expect(post.title).toBe('Test post');
-    expect(post.filename).toBe('test-post.json');
+    expect(post.date).toBe('6th October 2015');
+    expect(post.author).toBe('Dave Thompson');
+    expect(post.filename).toBe('test-post.md');
   });
 
   it("should return the latest post", function() {
@@ -40,7 +42,7 @@ describe("Index", function() {
     expect(post instanceof Post).toBeTruthy();
     expect(post.slug).toBe('2015/10/test-post');
     expect(post.title).toBe('Test post');
-    expect(post.filename).toBe('test-post.json');
+    expect(post.filename).toBe('test-post.md');
   });
 
 });

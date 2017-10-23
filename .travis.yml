@@ -2,14 +2,4 @@ language: node_js
 node_js:
 - '0.10'
 - '6'
-deploy:
-  provider: openshift
-  user: davethompson21@gmail.com
-  password:
-    secure: Bg//xUYKHAoHJ3JN9popVketWqS6CFCAHRCcwHqEOdpi/jNxOFZT1hTdhzmJ9pVGjwKoS0CFAq2MyfB1oRIOxf2fNC9B145RFUtv8bkeEKFssCwaYMWVDZtdIUJmPPSlUtvdIONXbu2R96wotqopjm0W5swHNayJ6nqH2LdwNCc=
-  app: personal
-  domain: davet1985
-  on:
-    repo: davet1985/dave-thompson.co.uk
-    branch: master
-  skip_cleanup: true
+- '8'

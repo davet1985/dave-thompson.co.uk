@@ -10,9 +10,9 @@ gulp.task('default', function() {
 
 gulp.task('javascript', function() {
   return gulp.src([
-      './bower_components/jquery/dist/jquery.min.js',
-      './bower_components/foundation/js/vendor/modernizr.js',
-      './bower_components/foundation/js/foundation.min.js',
+      './node_modules/jquery/dist/jquery.min.js',
+      './node_modules/foundation-sites/js/vendor/modernizr.js',
+      './node_modules/foundation-sites/js/foundation.min.js',
       './src/assets/javascripts/*.js'
     ])
     .pipe(concat('app.js'))
@@ -21,9 +21,8 @@ gulp.task('javascript', function() {
 
 gulp.task('sass', function () {
   gulp.src([
-      './bower_components/foundation/scss/normalize.scss',
-      './bower_components/foundation/scss/foundation.scss',
-      './bower_components/sweetalert/dist/sweetalert.css',
+      './node_modules/foundation-sites/scss/normalize.scss',
+      './node_modules/foundation-sites/scss/foundation.scss',
       './src/assets/stylesheets/style.scss'
     ])
     .pipe(sass())

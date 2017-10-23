@@ -14,8 +14,8 @@
     "url": "https://github.com/davet1985/dave-thompson.co.uk"
   },
   "engines": {
-    "node": ">= 0.6.0",
-    "npm": ">= 1.0.0"
+    "node": ">= 6.0.0",
+    "npm": ">= 5.0.0"
   },
   "dependencies": {
     "body-parser": "~1.12.0",
